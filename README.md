@@ -1,4 +1,4 @@
-![Form-01](https://github.com/ekabelaw/Form-Excercise/assets/25884840/1dcf1cf8-6990-4d18-88f7-cb72a7d9592b)# Form Excercise
+# Form Excercise
 
 I learn to create the form page using flexbox and grid.
 
