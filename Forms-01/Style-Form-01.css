@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+
+:root {
+  --Colors-Heading: #1E0E62;
+  --Colors-White: #FFF;
+  --Colors-Grey: #EBEAED;
+  --Colors-Text: rgba(21, 20, 57, 0.40);
+  --Action-Primary: #25DAC5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.form-container {
+  background-image: url(/images-stock/Background-01.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rebeccapurple;
+  width: 100%;
+  padding: 200px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.form-box {
+  width: 430px;
+  height: 530px;
+  background: var(--Colors-White);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.form-title {
+  color: var(--Colors-Heading);
+  font-size: 42px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email, .password {
+  display: block;
+  width: 330px;
+  height: 50px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--Colors-Text);
+  padding-left: 25px;
+  border-radius: 100px;
+  border: solid 2px #EBEAED;
+}
+
+.email {
+  margin-bottom: 20px;
+}
+
+.email:focus, .password:focus {
+  color: var(--Action-Primary);
+}
+
+.password {
+  margin-bottom: 42px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--Colors-Grey);
+  margin-left: 10px;
+  vertical-align: text-top;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.1s ease-in-out;
+}
+
+input[type="checkbox"]:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 15px;
+  padding: 3px;
+  color: var(--Colors-Heading);
+  display: none;
+}
+
+input[type="checkbox"]:hover {
+  background-color: var(--Action-Primary);
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--Action-Primary);
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+.agree {
+  color: var(--Colors-Text);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.btn {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 330px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: var(--Action-Primary);
+  border: none;
+  color: var(--Colors-White);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(37, 191, 218);
+}
+
+.divider {
+  width: 330px;
+  margin-bottom: 25px;
+  border-top: 1px solid var(--Colors-Grey);
+}
+
+.text-bottom {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgba(21, 20, 57, 0.4);
+}
+
+.sign-in {
+  color: var(--Action-Primary);
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.sign-in:hover {
+  border-bottom: solid 2px var(--Action-Primary);
+}
